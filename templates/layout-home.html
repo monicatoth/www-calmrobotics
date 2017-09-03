@@ -1,0 +1,59 @@
+<!doctype html><head><title>Calm Robotics</title>
+
+<!-- stylesheets and icons -->
+<link rel=stylesheet type=text/css href="static/style.css?q=1103">
+<link rel="shortcut icon" href="static/favicon.ico?q=102">
+
+<!-- fonts -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nixie+One">
+<link rel=stylesheet type=text/css href="static/LiebeOrnaments_Webfont.css">
+
+</head>
+
+<!-- html5.js simply helps older browsers and IE recognize HTML5 elements -->
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='html5.js') }}"></script> -->
+
+<body>  
+
+  <header-border></header-border>
+  <footer-border></footer-border>
+  <nav><a href="#top" id="home-icon"><span style="border-bottom: none;">G</span></a><br>
+       <a href="#about">About</a><br>
+       <a href="#summary">Summary</a><br>
+       <a href="#principles">Principles</a><br>
+       <a href="#why">Reasons</a><br>
+       <a href="#projects">Projects</a><br>
+       <a href="#learning">Learning</a><br>
+       <a href="#contact">Contact</a>
+  </nav><nav-background></nav-background><nav-vertical></nav-vertical>
+  <header id="top">Calm Robotics</header>
+  <article>
+{% include 'main.html' %}
+<div class="top-image">Picture Goes Here</div><div class="top-image">Picture Goes Here</div><div class="top-image">Picture Goes Here</div>
+<div id="introduction" class="nav_class"><div class="ornament">c&#x00A2;d</div>
+What is this? Who are you? Where am I?</div>
+{% include 'introduction.html' %}
+<div id="summary" class="nav_class"><div class="ornament">c&#x00A2;d</div>
+<h1>What is Calm Robotics?</h1></div>
+{% include 'summary-intro.html' %}
+<div id="principles" class="nav_class"><div class="ornament">c&#x00A2;d</div>
+<h1>Principles</h1></div>
+{% include 'principles-intro.html' %}
+<div id="why" class="nav_class"><div class="ornament">c&#x00A2;d</div>
+<h1>Why Calm Robotics?</h1></div>
+{% include 'reasons-why-intro.html' %}
+<div id="projects" class="nav_class"><div class="ornament">c&#x00A2;d</div>
+<h1>What Are You Doing About It?</h1></div>
+<div class="top-image">Picture Goes Here</div><div class="top-image">Picture Goes Here</div><div class="top-image">Picture Goes Here</div>
+{% include 'projects-intro.html' %}
+<div id="learning" class="nav_class"><div class="ornament">c&#x00A2;d</div>
+<h1>Glossary, Bibliography, and Learning More</h1></div>
+{% include 'learning-intro.html' %}
+</article>
+  <footer>Text Only &emsp;&emsp;&emsp; Site Map &emsp;&emsp;&emsp; Related &emsp;&emsp;&emsp; Credits </footer>
+  <footer-background></footer-background>
+</body> 
+
+</html>
+
