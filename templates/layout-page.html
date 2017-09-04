@@ -19,12 +19,16 @@
   <header-border></header-border>
   <footer-border></footer-border>
   <nav><a href="#top" id="home-icon"><span style="border-bottom: none;">G</span></a><br>
-       <a href="#glossary">Glossary</a><br>
+    {% block nav_content %}{% endblock %}
+<!--       <a href="#glossary">Glossary</a><br>
        <a href="#faq">FAQ</a><br>
-       <a href="#bibliography">Bibliography</a>
+       <a href="#bibliography">Bibliography</a> -->
   </nav><nav-background></nav-background><nav-vertical></nav-vertical>
-  <header id="top"></header>
-  <article>Hello World</article>
+  <header class="internal">{% block header %}{% endblock %}</header>
+  <article>
+  <div class="breadcrumb">{% block breadcrumbs %}{% endblock %}</div>
+  {% block content %}{% endblock %}
+  </article>
   <footer>Text Only &emsp;&emsp;&emsp; Site Map &emsp;&emsp;&emsp; Related &emsp;&emsp;&emsp; Credits </footer>
   <footer-background></footer-background>
 </body> 
